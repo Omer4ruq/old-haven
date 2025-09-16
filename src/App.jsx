@@ -12,6 +12,7 @@ import { NewsSection } from './components/NewsSection'
 import { Footer } from './components/Footer'
 import HealthcareDesignSystem from './HealthcareDesignSystem'
 import Banner from './components/Banner'
+import SeniorCareComponent from './components/SeniorCareComponent'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -24,6 +25,7 @@ function App() {
       <ServicesSection />
       <TestimonialsSection />
       <ProductsSection />
+      <SeniorCareComponent />
       <ClientReviewsSection />
       <NewsSection />
       <Footer />
