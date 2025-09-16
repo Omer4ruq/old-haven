@@ -13,6 +13,8 @@ import { Footer } from './components/Footer'
 import HealthcareDesignSystem from './HealthcareDesignSystem'
 import Banner from './components/Banner'
 import SeniorCareComponent from './components/SeniorCareComponent'
+import { FoundersSection } from './components/FoundersSection'
+import { TeamMembersSection } from './components/TeamMembersSection'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -23,6 +25,8 @@ function App() {
       <Banner></Banner>
       <HeroSection />
       <ServicesSection />
+      <FoundersSection/>
+      <TeamMembersSection/>
       <TestimonialsSection />
       <ProductsSection />
       <SeniorCareComponent />

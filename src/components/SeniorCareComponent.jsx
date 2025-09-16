@@ -147,7 +147,8 @@ const SeniorCareComponent = () => {
           <div>
             <div className="mb-8">
               <img 
-                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&h=400&fit=crop" 
+                // src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&h=400&fit=crop" 
+               src='https://assets.elder.org/app/uploads/2022/05/25100216/nursing-care-costs-scaled-1-1024x682.jpg'
                 alt="Senior woman with dog" 
                 className="w-full h-96 object-cover rounded-lg"
               />
