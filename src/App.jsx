@@ -11,6 +11,7 @@ import { ClientReviewsSection } from './components/ClientReviewsSection'
 import { NewsSection } from './components/NewsSection'
 import { Footer } from './components/Footer'
 import HealthcareDesignSystem from './HealthcareDesignSystem'
+import Banner from './components/Banner'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
   return (
        <div className="min-h-screen bg-white">
       <Header />
+      <Banner></Banner>
       <HeroSection />
       <ServicesSection />
       <TestimonialsSection />
