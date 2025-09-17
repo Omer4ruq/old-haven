@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-
+import logo from '../assets/life-cercle-bangladesh.png'
 export function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
@@ -8,10 +8,11 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center">
+              {/* <div className="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold">H</span>
               </div>
-              <span className="text-xl font-semibold">HealthCare</span>
+              <span className="text-xl font-semibold">HealthCare</span> */}
+               <img src={logo} alt="Life Circle Bangladesh" className=' w-40 h-16 object-contain p-0'/>
             </div>
             <p className="text-gray-300 leading-relaxed">
               Providing compassionate, professional healthcare services for seniors and their families 

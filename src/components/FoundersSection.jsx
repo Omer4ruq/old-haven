@@ -3,9 +3,9 @@ import { ImageWithFallback } from './figma/ImageWithFallback.jsx';
 export function FoundersSection() {
   const founders = [
     {
-      name: "Dr. Sarah Mitchell",
+      name: "Dr. SaLeh Faruq",
       role: "Chief Executive Officer & Co-Founder",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBwcm9mZXNzaW9uYWwlMjBoZWFsdGhjYXJlfGVufDF8fHx8MTc1Nzg0MDUzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://www.the100indianmuslims.com/upld/blog/92/abdul-kader-fazlani.jpg",
       bio: "With over 20 years of experience in geriatric medicine, Dr. Mitchell founded HealthCare with a vision to revolutionize senior care. Her dedication to compassionate healthcare has transformed thousands of lives."
     },
     {

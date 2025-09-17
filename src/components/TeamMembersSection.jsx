@@ -10,7 +10,7 @@ export function TeamMembersSection() {
     {
       name: "Lisa Anderson",
       role: "Head Nurse",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxudXJzZSUyMGZlbWFsZSUyMGhlYWx0aGNhcmV8ZW58MXx8fHwxNzU3ODQwNTMyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: "https://img.freepik.com/premium-photo/closeup-portrait-confident-indian-businessman-working-office-interior-looking-camera_116547-72024.jpg"
     },
     {
       name: "David Chen",
@@ -30,7 +30,7 @@ export function TeamMembersSection() {
     {
       name: "Jennifer Kim",
       role: "Nutritionist",
-      image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxudXRyaXRpb25pc3QlMjBmZW1hbGV8ZW58MXx8fHwxNzU3ODQwNTMzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: "https://www.the100indianmuslims.com/upld/blog/148/yusuff-ali-musaliam-veettil-abdul-kader.jpg"
     },
     {
       name: "Anthony Davis",

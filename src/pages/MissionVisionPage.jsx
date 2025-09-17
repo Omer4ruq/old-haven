@@ -1,8 +1,9 @@
-import { Header } from '../components/Header.jsx';
+// import { Header } from '../components/Header.jsx';
 import { Footer } from '../components/Footer.jsx';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback.jsx';
 import { Heart, Target, Users, Award, Shield, Globe } from 'lucide-react';
-
+import img1 from '../assets/mission.jpg';
+import Header from '../components/Header.jsx';
 export function MissionVisionPage() {
   const values = [
     {
@@ -61,33 +62,32 @@ export function MissionVisionPage() {
         </div>
       </section>
 
-      {/* Mission Section */}
+      
+      {/* Vision Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Mission</h2>
+              <div className="flex items-center mb-6">
+                <span className="text-3xl mr-3">🌟</span>
+                <h2 className="text-4xl font-bold text-gray-900">Our Vision</h2>
+              </div>
               <div className="text-lg text-gray-700 space-y-4 leading-relaxed">
                 <p>
-                  <strong className="text-emerald-600">To provide exceptional, compassionate healthcare services</strong> that 
-                  enable seniors to live with dignity, independence, and joy in the comfort of their own homes.
+                  <strong className="text-green-600">To ensure the holistic, rights-based well-being of senior citizens</strong>—empowering them to remain physically healthy, mentally refreshed, emotionally joyful, and free from anxiety and distress.
                 </p>
                 <p>
-                  We are committed to delivering personalized care solutions that address the unique needs 
-                  of each individual while supporting their families through every step of the journey. 
-                  Our comprehensive approach combines medical expertise with genuine human connection to 
-                  create meaningful improvements in quality of life.
+                  Through this comprehensive support, they can continuously contribute to the progress of society and the nation with the richness of their lifelong experience. We believe that seniors are not just recipients of care, but valuable contributors whose wisdom and expertise should be honored and utilized.
                 </p>
                 <p>
-                  Through innovative care practices, continuous education, and unwavering dedication to 
-                  excellence, we strive to set the standard for home-based senior care services.
+                  Our vision encompasses creating an inclusive, age-friendly society where every senior citizen can live with dignity, purpose, and joy while maintaining their independence and connection to their communities.
                 </p>
               </div>
             </div>
             <div className="relative">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1632556719027-a2e7fa84d587?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaXNzaW9uJTIwdmlzaW9uJTIwaGVhbHRoY2FyZSUyMGdvYWxzfGVufDF8fHx8MTc1ODA5Mjc3NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Healthcare team mission and vision"
+              <img 
+                src={img1} 
+                alt="Senior citizen with grey hair enjoying life"
                 className="rounded-xl shadow-2xl w-full h-96 object-cover"
               />
             </div>
@@ -95,59 +95,57 @@ export function MissionVisionPage() {
         </div>
       </section>
 
-      {/* Vision Section */}
+      {/* Mission Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="lg:order-2">
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Vision</h2>
+              <div className="flex items-center mb-6">
+                <span className="text-3xl mr-3">🎯</span>
+                <h2 className="text-4xl font-bold text-gray-900">Our Mission</h2>
+              </div>
               <div className="text-lg text-gray-700 space-y-4 leading-relaxed">
                 <p>
-                  <strong className="text-emerald-600">To be the leading provider of home-based senior care services</strong>, 
-                  recognized for our innovation, compassion, and unwavering commitment to improving lives.
+                  <strong className="text-green-600">To ensure comprehensive care and dignity for senior citizens</strong> by providing essential protection, housing, nutrition, clothing, comfort, entertainment, medical services, and rehabilitation.
                 </p>
                 <p>
-                  We envision a future where aging in place is not just possible, but preferred—where 
-                  seniors can maintain their independence, dignity, and connection to their communities 
-                  while receiving the highest quality of care.
+                  We are committed to creating employment opportunities for physically capable yet economically disadvantaged elders, recognizing that meaningful work contributes to their sense of purpose and well-being.
                 </p>
                 <p>
-                  Our vision extends beyond individual care to creating a healthier, more supportive 
-                  society where aging is celebrated, families are empowered, and every senior has 
-                  access to the resources they need to thrive.
+                  Our mission extends beyond individual care to building a society and nation that is inclusive, age-friendly, and respectful of the wisdom and contributions of all generations. We strive to create an environment where aging is celebrated and seniors are valued as integral members of our communities.
                 </p>
               </div>
             </div>
             <div className="lg:order-1 relative">
-              <div className="bg-emerald-600 rounded-xl p-8 text-white">
-                <h3 className="text-2xl font-bold mb-6">Vision Goals for 2030</h3>
+              <div className="bg-gradient-to-r from-emerald-700 to-emerald-600 rounded-xl p-8 text-white">
+                <h3 className="text-2xl font-bold mb-6">Our Core Services</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start space-x-3">
-                    <Target className="w-6 h-6 text-emerald-200 flex-shrink-0 mt-1" />
+                    <Heart className="w-6 h-6 text-green-200 flex-shrink-0 mt-1" />
                     <div>
-                      <strong className="block">Expand Nationwide</strong>
-                      <span className="text-emerald-100">Serve communities in all 50 states</span>
+                      <strong className="block">Essential Care</strong>
+                      <span className="text-green-100">Housing, nutrition, clothing & comfort</span>
                     </div>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <Heart className="w-6 h-6 text-emerald-200 flex-shrink-0 mt-1" />
+                    <Shield className="w-6 h-6 text-green-200 flex-shrink-0 mt-1" />
                     <div>
-                      <strong className="block">100,000 Families</strong>
-                      <span className="text-emerald-100">Impact 100,000+ families with our services</span>
+                      <strong className="block">Medical Services</strong>
+                      <span className="text-green-100">Healthcare & rehabilitation support</span>
                     </div>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <Award className="w-6 h-6 text-emerald-200 flex-shrink-0 mt-1" />
+                    <Users className="w-6 h-6 text-green-200 flex-shrink-0 mt-1" />
                     <div>
-                      <strong className="block">Industry Leadership</strong>
-                      <span className="text-emerald-100">Set new standards for quality and innovation</span>
+                      <strong className="block">Employment Opportunities</strong>
+                      <span className="text-green-100">Meaningful work for capable elders</span>
                     </div>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <Globe className="w-6 h-6 text-emerald-200 flex-shrink-0 mt-1" />
+                    <Globe className="w-6 h-6 text-green-200 flex-shrink-0 mt-1" />
                     <div>
-                      <strong className="block">Technology Integration</strong>
-                      <span className="text-emerald-100">Pioneer AI and telehealth solutions</span>
+                      <strong className="block">Community Building</strong>
+                      <span className="text-green-100">Creating inclusive, age-friendly society</span>
                     </div>
                   </li>
                 </ul>

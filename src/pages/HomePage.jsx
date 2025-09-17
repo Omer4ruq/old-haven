@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header } from '../components/Header';
+// import { Header } from '../components/Header';
 import Banner from '../components/Banner';
 import { HeroSection } from '../components/HeroSection';
 import { FoundersSection } from '../components/FoundersSection';

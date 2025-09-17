@@ -1,12 +1,14 @@
 import { Router, useRouter } from './components/Router.jsx';
 
 
-import { Header } from './components/Header.jsx';
+// import { Header } from './components/Header.jsx';
 import HomePage from './pages/HomePage.jsx';
 import { Footer } from './components/Footer.jsx';
 import { AssessmentPage } from './pages/AssessmentPage.jsx';
 import { MissionVisionPage } from './pages/MissionVisionPage.jsx';
 import { OurTargetPage } from './pages/OurTargetPage.jsx';
+import Header from './components/Header.jsx';
+// import MissionVisionPage from './pages/MissionVisionPage.jsx';
 
 function AppContent() {
   const { currentPage } = useRouter();
