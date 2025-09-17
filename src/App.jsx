@@ -1,41 +1,49 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
-import { HeroSection } from './components/HeroSection'
-import { Header } from './components/Header'
-import { ServicesSection } from './components/ServicesSection'
-import { TestimonialsSection } from './components/TestimonialsSection'
-import { ProductsSection } from './components/ProductsSection'
-import { ClientReviewsSection } from './components/ClientReviewsSection'
-import { NewsSection } from './components/NewsSection'
-import { Footer } from './components/Footer'
-import HealthcareDesignSystem from './HealthcareDesignSystem'
-import Banner from './components/Banner'
-import SeniorCareComponent from './components/SeniorCareComponent'
-import { FoundersSection } from './components/FoundersSection'
-import { TeamMembersSection } from './components/TeamMembersSection'
+import { Router, useRouter } from './components/Router.jsx';
 
-function App() {
-  // const [count, setCount] = useState(0)
 
-  return (
-       <div className="min-h-screen bg-white">
-      <Header />
-      <Banner></Banner>
-      <HeroSection />
-      <ServicesSection />
-      <FoundersSection/>
-      <TeamMembersSection/>
-      <TestimonialsSection />
-      <ProductsSection />
-      <SeniorCareComponent />
-      <ClientReviewsSection />
-      <NewsSection />
-      <Footer />
-      {/* <HealthcareDesignSystem /> */}
-    </div>
-  )
+import { Header } from './components/Header.jsx';
+import HomePage from './pages/HomePage.jsx';
+import { Footer } from './components/Footer.jsx';
+import { AssessmentPage } from './pages/AssessmentPage.jsx';
+import { MissionVisionPage } from './pages/MissionVisionPage.jsx';
+import { OurTargetPage } from './pages/OurTargetPage.jsx';
+
+function AppContent() {
+  const { currentPage } = useRouter();
+
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'assessment':
+        return <AssessmentPage />;
+      case 'mission-vision':
+        return <MissionVisionPage />;
+      case 'our-target':
+        return <OurTargetPage />;
+      case 'home':
+      default:
+        return (
+          <div className="min-h-screen bg-white">
+            <Header />
+            <HomePage />
+            <Footer />
+          </div>
+        );
+    }
+  };
+
+  // For service pages that already include Header and Footer
+  if (['assessment', 'mission-vision', 'our-target'].includes(currentPage)) {
+    return renderPage();
+  }
+
+  // For home page
+  return renderPage();
 }
 
-export default App
+export default function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
+  );
+}

@@ -1,11 +1,13 @@
 import { Search, Phone, Mail, ChevronDown } from 'lucide-react';
 import { Button } from './ui/button.jsx';
 import { useState, useEffect, useRef } from 'react';
-import logo from '../assets/life-cercle-bangladesh-logo.png'
+import logo from '../assets/life-cercle-bangladesh.png'
+import { useRouter } from './Router.jsx';
 
 export function Header() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const dropdownRef = useRef(null);
+    const { navigate } = useRouter();
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -41,7 +43,7 @@ export function Header() {
       </div>
 
       {/* Main Navigation */}
-      <div className="max-w-7xl mx-auto px-4 py-4">
+      <div className="max-w-7xl mx-auto px-4 py-1">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             {/* <div className="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center">
@@ -50,7 +52,7 @@ export function Header() {
             {/* <div className="w-20 h-20  flex items-center justify-center">
   <img src={logo} alt="Life Circle Bangladesh" className='w-full h-full object-contain'/>
             </div> */}
-            <img src={logo} alt="Life Circle Bangladesh" className='w-20 h-20 object-contain p-0'/>
+            <img src={logo} alt="Life Circle Bangladesh" className=' w-40 h-16 object-contain p-0'/>
             {/* <span className="text-xl font-semibold text-gray-900">HealthCare</span> */}
           </div>
 
@@ -68,27 +70,36 @@ export function Header() {
                 <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
               </button>
               
-              {isServicesOpen && (
+        {isServicesOpen && (
                 <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-100 z-50">
                   <div className="py-2">
-                    <a 
-                      href="#" 
-                      className="block px-4 py-3 text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 transition-colors"
+                    <button 
+                      onClick={() => {
+                        navigate('assessment');
+                        setIsServicesOpen(false);
+                      }}
+                      className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 transition-colors"
                     >
                       Assessment of the Residence
-                    </a>
-                    <a 
-                      href="#" 
-                      className="block px-4 py-3 text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 transition-colors"
+                    </button>
+                    <button 
+                      onClick={() => {
+                        navigate('mission-vision');
+                        setIsServicesOpen(false);
+                      }}
+                      className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 transition-colors"
                     >
                       Mission and Vision
-                    </a>
-                    <a 
-                      href="#" 
-                      className="block px-4 py-3 text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 transition-colors"
+                    </button>
+                    <button 
+                      onClick={() => {
+                        navigate('our-target');
+                        setIsServicesOpen(false);
+                      }}
+                      className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 transition-colors"
                     >
                       Our Target
-                    </a>
+                    </button>
                   </div>
                 </div>
               )}
