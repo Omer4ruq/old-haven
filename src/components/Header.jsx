@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Search, Phone, Mail, ChevronDown, Menu, X } from 'lucide-react';
 import { useRouter } from './Router';
+import logo from '../assets/life-cercle-bangladesh.png'
 
 const Header = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -140,23 +141,24 @@ const Header = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center">
-              <div className="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-xl logo-font">LC</span>
-              </div>
+              {/* <div className="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center shadow-lg">
+                   <img src={logo} alt="Life Circle Bangladesh" className=' w-40 h-16 object-contain p-0'/>
+              </div> */}
+                 <img src={logo} alt="Life Circle Bangladesh" className=' w-40 h-16 object-contain p-0'/>
               <div className="ml-3">
-                <div className="logo-font text-xl font-bold text-gray-900">Life Circle</div>
-                <div className="text-xs text-gray-500 -mt-1">Bangladesh</div>
+                {/* <div className="logo-font text-xl font-bold text-gray-900">Life Circle</div>
+                <div className="text-xs text-gray-500 -mt-1">Bangladesh</div> */}
               </div>
             </div>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
-              <a href="/" className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200 hover:font-semibold relative group">
+              <a href="/" className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200  relative group">
                 Home
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
               </a>
               
-              <a href="#" className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200 hover:font-semibold relative group">
+              <a href="#" className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200  relative group">
                 About
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
               </a>
@@ -165,7 +167,7 @@ const Header = () => {
               <div className="relative" ref={dropdownRef}>
                 <button 
                   onClick={() => setIsServicesOpen(!isServicesOpen)}
-                  className="nav-font flex items-center space-x-1 text-gray-700 hover:text-green-600 transition-all duration-200 hover:font-semibold relative group"
+                  className="nav-font flex items-center space-x-1 text-gray-700 hover:text-green-600 transition-all duration-200  relative group"
                 >
                   <span>Services</span>
                   <ChevronDown className={`w-4 h-4 transition-all duration-200 ${isServicesOpen ? 'rotate-180' : ''}`} />
@@ -207,15 +209,15 @@ const Header = () => {
                 )}
               </div>
               
-              <a href="#" className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200 hover:font-semibold relative group">
+              <a href="#" className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200  relative group">
                 Products
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
               </a>
-              <a href="#" className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200 hover:font-semibold relative group">
+              <a href="#" className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200  relative group">
                 News
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
               </a>
-              <a href="#" className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200 hover:font-semibold relative group">
+              <a href="#" className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200  relative group">
                 Contact
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
               </a>
