@@ -204,6 +204,45 @@ const Header = () => {
                           Our Target
                         </div>
                       </button>
+                         <button 
+                        onClick={() => navigate('admission-elders')}
+                        className="nav-font block w-full text-left px-6 py-3 text-gray-700 hover:bg-green-50 hover:text-green-600 transition-all duration-150 hover:translate-x-2 hover:font-medium"
+                      >
+                        <div className="flex items-center">
+                          <div className="w-2 h-2 bg-green-400 rounded-full mr-3 opacity-0 transition-opacity duration-150 hover:opacity-100"></div>
+                          Admission of Elders
+                        </div>
+                      </button>
+                         <button 
+                        onClick={() => navigate('donate-us')}
+                        className="nav-font block w-full text-left px-6 py-3 text-gray-700 hover:bg-green-50 hover:text-green-600 transition-all duration-150 hover:translate-x-2 hover:font-medium"
+                      >
+                        <div className="flex items-center">
+                          <div className="w-2 h-2 bg-green-400 rounded-full mr-3 opacity-0 transition-opacity duration-150 hover:opacity-100"></div>
+                          Donate Us
+                        </div>
+                      </button>
+                         <button 
+                        onClick={() => navigate('hospital-facilities')}
+                        className="nav-font block w-full text-left px-6 py-3 text-gray-700 hover:bg-green-50 hover:text-green-600 transition-all duration-150 hover:translate-x-2 hover:font-medium"
+                      >
+                        <div className="flex items-center">
+                          <div className="w-2 h-2 bg-green-400 rounded-full mr-3 opacity-0 transition-opacity duration-150 hover:opacity-100"></div>
+                          Hospital Facilities
+                        </div>
+                      </button>
+                         <button 
+                        onClick={() => navigate('room-details')}
+                        className="nav-font block w-full text-left px-6 py-3 text-gray-700 hover:bg-green-50 hover:text-green-600 transition-all duration-150 hover:translate-x-2 hover:font-medium"
+                      >
+                        <div className="flex items-center">
+                          <div className="w-2 h-2 bg-green-400 rounded-full mr-3 opacity-0 transition-opacity duration-150 hover:opacity-100"></div>
+                          Room Details
+                        </div>
+                      </button>
+                 
+              
+
                     </div>
                   </div>
                 )}
@@ -217,10 +256,10 @@ const Header = () => {
                 News
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
               </a>
-              <a href="#" className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200  relative group">
+              <button onClick={() => navigate('contact-us')} className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200  relative group">
                 Contact
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
-              </a>
+              </button>
             </nav>
 
             {/* Desktop CTA Button */}

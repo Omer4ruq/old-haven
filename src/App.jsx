@@ -8,6 +8,11 @@ import { AssessmentPage } from './pages/AssessmentPage.jsx';
 import { MissionVisionPage } from './pages/MissionVisionPage.jsx';
 import { OurTargetPage } from './pages/OurTargetPage.jsx';
 import Header from './components/Header.jsx';
+import { DonateUsPage } from './pages/DonateUsPage.jsx';
+import { ContactUsPage } from './pages/ContactUsPage.jsx';
+import { RoomDetailsPage } from './pages/RoomDetailsPage.jsx';
+import { AdmissionOfTheEldersPage } from './pages/AdmissionOfTheEldersPage.jsx';
+import { HospitalFacilitiesPage } from './pages/HospitalFacilitiesPage.jsx';
 // import MissionVisionPage from './pages/MissionVisionPage.jsx';
 
 function AppContent() {
@@ -21,6 +26,16 @@ function AppContent() {
         return <MissionVisionPage />;
       case 'our-target':
         return <OurTargetPage />;
+        case 'donate-us':
+        return <DonateUsPage />;
+      case 'contact-us':
+        return <ContactUsPage />;
+      case 'room-details':
+        return <RoomDetailsPage />;
+      case 'admission-elders':
+        return <AdmissionOfTheEldersPage />;
+      case 'hospital-facilities':
+        return <HospitalFacilitiesPage />;
       case 'home':
       default:
         return (

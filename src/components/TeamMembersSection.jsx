@@ -45,7 +45,7 @@ export function TeamMembersSection() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-white">
       <style>{`
         @keyframes scroll {
           from {
