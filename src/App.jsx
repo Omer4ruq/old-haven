@@ -13,6 +13,7 @@ import { ContactUsPage } from './pages/ContactUsPage.jsx';
 import { RoomDetailsPage } from './pages/RoomDetailsPage.jsx';
 import { AdmissionOfTheEldersPage } from './pages/AdmissionOfTheEldersPage.jsx';
 import { HospitalFacilitiesPage } from './pages/HospitalFacilitiesPage.jsx';
+import { ProjectDetailsBudgetPage } from './pages/ProjectDetailsBudgetPage.jsx';
 // import MissionVisionPage from './pages/MissionVisionPage.jsx';
 
 function AppContent() {
@@ -34,6 +35,8 @@ function AppContent() {
         return <RoomDetailsPage />;
       case 'admission-elders':
         return <AdmissionOfTheEldersPage />;
+         case 'project-details':
+        return <ProjectDetailsBudgetPage />;
       case 'hospital-facilities':
         return <HospitalFacilitiesPage />;
       case 'home':

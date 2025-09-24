@@ -247,13 +247,13 @@ const Header = () => {
                   </div>
                 )}
               </div>
-              
-              <a href="#" className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200  relative group">
-                Products
+
+              <button onClick={() => navigate('project-details')} className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200  relative group">
+                Project details and Budget
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
-              </a>
+              </button>
               <a href="#" className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200  relative group">
-                News
+               Donate Us 
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
               </a>
               <button onClick={() => navigate('contact-us')} className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200  relative group">
@@ -328,10 +328,10 @@ const Header = () => {
               </div>
               
               <a href="#" className="nav-font block py-3 px-4 text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-lg transition-all duration-200 font-medium">
-                Products
+                Project details and Budget
               </a>
               <a href="#" className="nav-font block py-3 px-4 text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-lg transition-all duration-200 font-medium">
-                News
+                Donate Us 
               </a>
               <a href="#" className="nav-font block py-3 px-4 text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-lg transition-all duration-200 font-medium">
                 Contact

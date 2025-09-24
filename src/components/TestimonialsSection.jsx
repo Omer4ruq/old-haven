@@ -4,21 +4,21 @@ import { ImageWithFallback } from './figma/ImageWithFallback.jsx';
 export function TestimonialsSection() {
   const testimonials = [
     {
-      name: "Margaret Johnson",
+      name: "Maruf Siddiqui",
       role: "Family Member",
       rating: 5,
       text: "The care team has been absolutely wonderful. My mother receives exceptional attention and I have complete peace of mind knowing she's in such capable hands.",
       image: "https://images.unsplash.com/photo-1738454738501-7e6626ccfcd2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGRlcmx5JTIwY2FyZSUyMGhlYWx0aGNhcmUlMjBzZW5pb3JzfGVufDF8fHx8MTc1NzgzODUwOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     },
     {
-      name: "Robert Chen",
+      name: "Robin Ahmed",
       role: "Son of Patient",
       rating: 5,
       text: "Professional, compassionate, and reliable. The staff goes above and beyond to ensure my father feels comfortable and well-cared for every single day.",
       image: "https://images.unsplash.com/photo-1757125736482-328a3cdd9743?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZWFsdGhjYXJlJTIwcHJvZmVzc2lvbmFscyUyMGRvY3RvciUyMG51cnNlfGVufDF8fHx8MTc1NzgzODUxMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     },
     {
-      name: "Linda Davis",
+      name: "Liton Dash",
       role: "Daughter of Patient",
       rating: 5,
       text: "I couldn't ask for better care for my mother. The team is incredibly skilled and treats every resident like family. Highly recommend their services.",

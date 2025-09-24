@@ -11,6 +11,9 @@ import SeniorCareComponent from '../components/SeniorCareComponent';
 import { ClientReviewsSection } from '../components/ClientReviewsSection';
 import { NewsSection } from '../components/NewsSection';
 import { Footer } from '../components/Footer';
+import ElderServicesSection from '../components/ElderServicesSection';
+import { FacilitiesSection } from '../components/FacilitiesSection';
+import { OurCapacitySection } from '../components/OurCapacitySection';
 
 const HomePage = () => {
     return (
@@ -18,14 +21,17 @@ const HomePage = () => {
       {/* <Header /> */}
       <Banner />
       {/* <HeroSection /> */}
-      <ServicesSection />
+      {/* <ServicesSection /> */}
+      <ElderServicesSection />
       <FoundersSection />
       <TeamMembersSection />
       <TestimonialsSection />
-      <ProductsSection />
+      {/* <ProductsSection /> */}
+      <FacilitiesSection />
       <SeniorCareComponent />
-      <ClientReviewsSection />
-      <NewsSection />
+      {/* <ClientReviewsSection /> */}
+      <OurCapacitySection />
+      {/* <NewsSection /> */}
       {/* <Footer /> */}
       {/* <HealthcareDesignSystem /> */}
     </div>
