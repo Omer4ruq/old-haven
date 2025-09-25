@@ -194,7 +194,7 @@ export function JoinOurTeamModal({ isOpen, onClose }) {
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <span className="text-gray-700">bKash Number:</span>
-                      <span className="font-bold text-emerald-600 text-lg">+880 1XXX-XXXXXX</span>
+                      <span className="font-bold text-emerald-600 text-lg">+8801707-072345</span>
                     </div>
                     <div className="text-sm text-gray-600">
                       <p>• Send your donation to this bKash number</p>

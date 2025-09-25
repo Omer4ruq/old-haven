@@ -8,6 +8,8 @@ import managment from '../assets/old/work managment.png';
 import dairy from '../assets/old/dairy.png';
 import firming from '../assets/old/firming.png';
 import transport from '../assets/old/transport.jpg';
+import Header from '../components/Header';
+import { Footer } from '../components/Footer';
 export function ProjectDetailsBudgetPage  ()  {
   const objectives = [
     {
@@ -110,6 +112,7 @@ export function ProjectDetailsBudgetPage  ()  {
 
   return (
     <div className="min-h-screen bg-white">
+        <Header />
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-green-600 to-green-700 text-white">
         <div className="absolute inset-0 bg-black/20"></div>
@@ -406,8 +409,8 @@ export function ProjectDetailsBudgetPage  ()  {
           <div className="mt-16">
             <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Agriculture Showcase</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 ">
-              <img src={dairy} alt="Dairy Units" className="rounded-xl shadow-lg " />
-              <img src={firming} alt="Farming Innovation" className="rounded-xl shadow-lg" />
+              <img src={dairy} alt="Dairy Units" className="rounded-xl w-[30vh] shadow-lg mx-auto" />
+              <img src={firming} alt="Farming Innovation" className="rounded-xl w-[30vh] shadow-lg mx-auto" />
             </div>
           </div>
         </div>
@@ -618,6 +621,7 @@ export function ProjectDetailsBudgetPage  ()  {
           </p>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

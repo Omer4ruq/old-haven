@@ -252,10 +252,10 @@ const Header = () => {
                 Project details and Budget
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
               </button>
-              <a href="#" className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200  relative group">
+              <button                         onClick={() => navigate('donate-us')} className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200  relative group">
                Donate Us 
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
-              </a>
+              </button>
               <button onClick={() => navigate('contact-us')} className="nav-font text-gray-700 hover:text-green-600 transition-all duration-200  relative group">
                 Contact
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
@@ -327,16 +327,16 @@ const Header = () => {
                 )}
               </div>
               
-              <a href="#" className="nav-font block py-3 px-4 text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-lg transition-all duration-200 font-medium">
+              <button href="#" className="nav-font block py-3 px-4 text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-lg transition-all duration-200 font-medium">
                 Project details and Budget
-              </a>
-              <a href="#" className="nav-font block py-3 px-4 text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-lg transition-all duration-200 font-medium">
-                Donate Us 
-              </a>
-              <a href="#" className="nav-font block py-3 px-4 text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-lg transition-all duration-200 font-medium">
+              </button>
+              <button onClick={() => navigate('donate-us')} className="nav-font block py-3 px-4 text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-lg transition-all duration-200 font-medium">
+                Donate Us
+              </button>
+              <button onClick={() => navigate('contact-us')} className="nav-font block py-3 px-4 text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-lg transition-all duration-200 font-medium">
                 Contact
-              </a>
-              
+              </button>
+
               {/* Mobile CTA Button */}
               <div className="pt-4 border-t border-gray-200">
                 <button className="nav-font w-full bg-green-600 hover:bg-green-700 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-200 hover:shadow-lg">
